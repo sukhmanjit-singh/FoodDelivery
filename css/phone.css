@@ -1,0 +1,37 @@
+#navbar{
+    flex-direction: column;
+}
+#services{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#client-section{
+    flex-wrap: wrap;
+}
+#navbar ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h-primary{
+    font-size: 2rem;
+}
+.box{
+    width:190px;
+}
+.client{
+    flex-direction: column;
+}
+.client-items img{
+    width:50px;
+    height:40px;
+}
+footer{
+    display: block;
+    font-size: 10px;
+}
+.contact{
+    justify-content: center;
+}

@@ -1,0 +1,194 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+} 
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Navigation Bar : Logo and Image*/
+#logo{
+    margin: 1px 14px;
+}
+#logo img{
+    margin: 9px 9px;
+    height: 3rem;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-style: 1.3rem;
+}
+#navbar ul li a{ 
+    display: block;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{ 
+    color: black;
+    background-color: white;
+    /* padding: 20px 20px; */
+}
+#home{
+     display: flex;
+     flex-direction: column;
+     padding : 3px 200px;
+     justify-content: center;
+     align-items: center;
+     height:800px;
+}
+#home::before{
+    content: "";
+    background:url('../bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity:0.89;
+    height:870px;
+     
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Gabarito', sans-serif;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Gabarito', sans-serif;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Gabarito', sans-serif;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    margin: 20px 20px;
+    padding: 10px;
+    font-size: 1.4rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:rgb(183, 127, 30);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    background-color: chocolate;
+    transform: scale(1.1);
+    border: black;
+}
+
+#services{
+    margin: 34px; 
+    display:flex;
+   position: relative;
+}
+#services .box{
+    border:2px solid black;
+    padding: 20px 20px;
+    margin: 10px 10px;
+    border-radius: 28px;
+    transition: all 0.5s ease-in-out;
+    background-color: #f6f6f6;
+}
+.box:hover{
+    transform: scale(1.02);
+}
+#services .box img{
+    height: 156px;
+    margin:auto;
+    display: block;
+}
+.client{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+#client-section{
+    position:relative; 
+    height: 500px;
+}
+#client-section::before{
+    content: "";
+    background:url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+.client-items img{
+    height: 124px;
+    margin: 20px 30px;
+}
+#contact{
+    position:relative;
+}
+footer{
+    background-color: black;
+    color: white;
+    
+}
+#contact::before{
+    content:"";
+    background:url('../contact.jpg') no-repeat center center/cover;
+    position: absolute ;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 2px black;
+    margin: 15px;
+}
+.contact-box{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+}
+.contact-box form{
+    width: 50%; 
+}
+.contact-box label{
+    width: 1.3rem; 
+    font-family: 'Gabarito', sans-serif;
+    color:black;
+    text-shadow: 3px 3px 2px aliceblue;
+}
